@@ -1,38 +1,139 @@
-.App {
+.page-shell {
+  min-height: 100vh;
+  padding: 48px 20px 64px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 215, 76, 0.45), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(27, 93, 168, 0.28), transparent 30%),
+    linear-gradient(160deg, #f8f3e7 0%, #f4efe1 45%, #e7eef6 100%);
+  color: #1c2430;
+}
+
+.hero-panel,
+.letter-card {
+  width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.hero-panel {
+  margin-bottom: 24px;
+  padding: 24px 28px 0;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #8d5b12;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero-panel h1 {
+  margin: 0;
+  font-size: clamp(2.3rem, 6vw, 4.4rem);
+  line-height: 0.96;
+  font-weight: 700;
+}
+
+.hero-title-accent {
+  display: block;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro {
+  max-width: 700px;
+  margin: 18px 0 0;
+  color: #304153;
+  font-size: 1.06rem;
+  line-height: 1.7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.letter-card {
+  background: rgba(255, 252, 245, 0.88);
+  border: 1px solid rgba(140, 104, 42, 0.2);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(35, 47, 62, 0.16);
+  backdrop-filter: blur(8px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.letter-top {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 26px;
+  background: linear-gradient(90deg, #1152a3 0%, #1f6fd4 50%, #f1c232 100%);
+  color: #fffdf7;
+  font-weight: 600;
+}
+
+.seal,
+.location {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.letter-body {
+  padding: 34px 28px 38px;
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.letter-body p {
+  margin: 0 0 18px;
+  text-indent: 2em;
+}
+
+.address {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.18rem;
+  font-weight: 700;
+  text-align: center;
+  text-indent: 0;
+}
+
+.event-box {
+  margin: 24px 0;
+  padding: 22px 22px 18px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(17, 82, 163, 0.08), rgba(241, 194, 50, 0.16));
+}
+
+.event-box h2 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+}
+
+.event-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.signature {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #213449;
+  text-indent: 0;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 24px 14px 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero-panel {
+    padding: 16px 8px 0;
+  }
+
+  .letter-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .letter-body {
+    padding: 24px 18px 28px;
+    font-size: 1rem;
   }
 }

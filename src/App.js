@@ -1,24 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <main className="page-shell">
+      <section className="hero-panel">
+        <p className="eyebrow">День героїв України</p>
+        <h1>
+          Лист-запрошення для
+          <span className="hero-title-accent">захисника</span>
+        </h1>
+        <p className="intro">
+          Особливий український вечір подяки, створений, щоб ушанувати
+          сміливість, невтрачений дух і здобутий подвиг наших воїнів.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </section>
+
+      <section className="letter-card">
+        <div className="letter-top">
+          <span className="seal">1 жовтня</span>
+          <span className="location">Київ, Алея Героїв</span>
+        </div>
+
+        <article className="letter-body">
+          <p className="address">Шановний захиснику України!</p>
+
+          <p>
+            Щиро запрошуємо Вас на свято до Дня героїв України. Це особливий
+            день, коли ми хочемо чесно й повсякчас пам&apos;ятати нашу історію,
+            ушанувати воєнний подвиг воїнів та якнайкраще подякувати кожному,
+            хто береже рідну землю.
+          </p>
+
+          <p>
+            Ваша сміливість, поцінований народом вчинок і незламність подарували
+            нам віру в майбутнє. Завдяки Вам український дух залишається
+            невтрачений, а здобутий мир обов&apos;язково стане реальністю.
+          </p>
+
+          <p>
+            Під час урочистості ми прагнемо подарувати Вам тепло вдячних
+            сердець, подякувати за службу та ушанувати силу, яка щодня захищає
+            нашу державу.
+          </p>
+
+          <div className="event-box">
+            <h2>У програмі</h2>
+            <ul>
+              <li>церемонія пошани українським героям;</li>
+              <li>музичні присвяти та слова вдячності;</li>
+              <li>зустріч громади з оборонцями України.</li>
+            </ul>
+          </div>
+
+          <p>
+            Будемо раді бачити Вас 1 жовтня о 16:00 на Алеї Героїв. Нехай це
+            свято стане знаком нашої єдності, поваги та щирої пам&apos;яті.
+          </p>
+
+          <p className="signature">
+            З глибокою шаною та вдячністю.
+            <br />
+          </p>
+        </article>
+      </section>
+    </main>
   );
 }
 
